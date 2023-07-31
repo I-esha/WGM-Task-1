@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black; /* Setting the background color to black */
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    background-color: #000; /* Setting the calculator background color to black */
+}
+
+.display-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* To place the "C" button on the right side of the display */
+}
+
+#display {
+    flex: 1;
+    height: 40px;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 5px;
+    background-color: white; /* Setting the display background color to white */
+    color: black; /* Setting the text color inside the display to black */
+    padding: 5px; /* Adding some padding for better visibility */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #800080; /* Setting the button background color to violet */
+    border: 1px solid #800080; /* Setting the button border color to violet */
+    color: white; /* Setting the text color inside the buttons to white */
+    cursor: pointer;
+}
+
+    button.operator {
+        background-color: violet; /* Setting the background color of operator buttons to violet */
+        border: 1px solid violet; /* Setting the border color of operator buttons to violet */
+    }
+
+    button#clear,
+    button#calculate {
+       
+        background-color: red; /* Setting the "C" and "=" button background color to red */
+        border: 1px solid red; /* Setting the "C" and "=" button border color to red */
+    }
+
+    button:hover {
+        background-color: #ff1493; /* Changing the button color on hover to a lighter violet */
+    }
